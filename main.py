@@ -1,7 +1,8 @@
 import openai
+import os
 
 # Set up the API key for OpenAI
-openai.api_key = "YOUR_OPENAI_API_KEY"
+openai.api_key  = os.getenv("OPENAI_API_KEY")
 # The charging from openai will be shown at https://platform.openai.com/account/usage , notice that every api calls will be charged.
 
 # Define the prompt for the chatbot
